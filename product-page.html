@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guitar House | Products</title>
+        <link rel="stylesheet" href="public/css/product-page.css" />
+        <link rel="stylesheet" href="public/css/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- header section -->
+            <header class="header" id="header">
+                <div class="header-items-container">
+                    <div class="site-header">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-guitar-icon lucide-guitar"
+                        >
+                            <path d="m11.9 12.1 4.514-4.514" />
+                            <path
+                                d="M20.1 2.3a1 1 0 0 0-1.4 0l-1.114 1.114A2 2 0 0 0 17 4.828v1.344a2 2 0 0 1-.586 1.414A2 2 0 0 1 17.828 7h1.344a2 2 0 0 0 1.414-.586L21.7 5.3a1 1 0 0 0 0-1.4z"
+                            />
+                            <path d="m6 16 2 2" />
+                            <path
+                                d="M8.23 9.85A3 3 0 0 1 11 8a5 5 0 0 1 5 5 3 3 0 0 1-1.85 2.77l-.92.38A2 2 0 0 0 12 18a4 4 0 0 1-4 4 6 6 0 0 1-6-6 4 4 0 0 1 4-4 2 2 0 0 0 1.85-1.23z"
+                            />
+                        </svg>
+                        <h1>Guitar House</h1>
+                    </div>
+                    <div class="navigation">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./product-page.html">Shop</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-right">
+                        <div class="cart-btn">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-shopping-cart-icon lucide-shopping-cart"
+                            >
+                                <circle cx="8" cy="21" r="1" />
+                                <circle cx="19" cy="21" r="1" />
+                                <path
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                                />
+                            </svg>
+                        </div>
+                        <div class="button-container">
+                            <button class="btn btn-primary">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- main section  -->
+            <main class="main-container">
+                <!-- filter section -->
+                <aside class="filter-sidebar">
+                    <div class="filter-container">
+                        <!-- filter by body style -->
+                        <div class="filter-section">
+                            <div class="section-header">Body Style</div>
+                            <div class="section-content">
+                                <div class="filter-option">
+                                    <input type="checkbox" id="strat" />
+                                    <label for="strat">Strat</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="tele" />
+                                    <label for="tele">Tele</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="les-paul" />
+                                    <label for="les-paul">Les Paul</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="sg" />
+                                    <label for="sg">SG</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="semi-hollow" />
+                                    <label for="semi-hollow">Semi-Hollow</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="superstrat" />
+                                    <label for="superstrat">Superstrat</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="offset" />
+                                    <label for="offset">Offset</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- filter my pickup type -->
+                        <div class="filter-section">
+                            <div class="section-header">Pickup Type</div>
+                            <div class="section-content">
+                                <div class="filter-option">
+                                    <input type="checkbox" id="single-coil" />
+                                    <label for="single-coil">Single Coil</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="humbucker" />
+                                    <label for="humbucker">Humbucker</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="p90" />
+                                    <label for="p90">P90</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="mixed" />
+                                    <label for="mixed">Mixed</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Filter by price -->
+                        <div class="filter-section">
+                            <div class="section-header">Price Range</div>
+                            <div class="section-content">
+                                <div class="filter-option">
+                                    <input type="checkbox" id="under-10000" />
+                                    <label for="under-10000"
+                                        >Under ₹10,000</label
+                                    >
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="10000-25000" />
+                                    <label for="10000-25000"
+                                        >₹10,000 - ₹25,000</label
+                                    >
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="25000-50000" />
+                                    <label for="25000-50000"
+                                        >₹25,000 - ₹50,000</label
+                                    >
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="50000-100000" />
+                                    <label for="50000-100000"
+                                        >₹50,000 - ₹1,00,000</label
+                                    >
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="100000-200000" />
+                                    <label for="100000-200000"
+                                        >₹1,00,000 - ₹2,00,000</label
+                                    >
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="above-200000" />
+                                    <label for="above-200000"
+                                        >Above ₹2,00,000</label
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- filter by brand -->
+                        <div class="filter-section">
+                            <div class="section-header">By Brand</div>
+                            <div class="section-content">
+                                <div class="filter-option">
+                                    <input type="checkbox" id="fender" />
+                                    <label for="fender">Fender</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="gibson" />
+                                    <label for="gibson">Gibson</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="ibanez" />
+                                    <label for="ibanez">Ibanez</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="prs" />
+                                    <label for="prs"
+                                        >PRS (Paul Reed Smith)</label
+                                    >
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="yamaha" />
+                                    <label for="yamaha">Yamaha</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="esp" />
+                                    <label for="esp">ESP / LTD</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="jackson" />
+                                    <label for="jackson">Jackson</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="content">
+                    <div>
+                        <h2>All Guitars</h2>
+                        <input type="input" />
+                    </div>
+
+                    <section class="featured-products">
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <span class="sale-badge">Sale</span>
+                                    <img src="public/products/fp1.png" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        Ibanez GRX40 RG Gio Series Maple Neck 6
+                                        String Electric Guitar
+                                    </h3>
+                                    <div class="product-pricing">
+                                        <span class="sale-price"
+                                            >Rs 20,900</span
+                                        >
+                                        <span class="original-price"
+                                            >Rs 23,455</span
+                                        >
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                        </div>
+                                        <span class="review-count">(154)</span>
+                                    </div>
+                                    <button
+                                        class="btn btn-primary add-to-cart-btn"
+                                    >
+                                        Add to Cart
+                                    </button>
+                                    <button
+                                        class="btn btn-outline add-to-cart-btn"
+                                    >
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <span class="sale-badge">Sale</span>
+                                    <img src="public/products/fp2.png" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        Fender Squier Sonic Mustang HH 6 String
+                                        Electric Guitar
+                                    </h3>
+                                    <div class="product-pricing">
+                                        <span class="sale-price"
+                                            >Rs 18,453</span
+                                        >
+                                        <span class="original-price"
+                                            >Rs 19,424</span
+                                        >
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                        </div>
+                                        <span class="review-count">(124)</span>
+                                    </div>
+                                    <button
+                                        class="btn btn-primary add-to-cart-btn"
+                                    >
+                                        Add to Cart
+                                    </button>
+                                    <button
+                                        class="btn btn-outline add-to-cart-btn"
+                                    >
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <span class="sale-badge">Sale</span>
+                                    <img src="public/products/fp3.png" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        Fender Squier Classic Vibe '60s
+                                        Stratocaster Electric Guitar
+                                    </h3>
+                                    <div class="product-pricing">
+                                        <span class="sale-price"
+                                            >Rs 44,369</span
+                                        >
+                                        <span class="original-price"
+                                            >Rs 46,704</span
+                                        >
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                        </div>
+                                        <span class="review-count">(124)</span>
+                                    </div>
+                                    <button
+                                        class="btn btn-primary add-to-cart-btn"
+                                    >
+                                        Add to Cart
+                                    </button>
+                                    <button
+                                        class="btn btn-outline add-to-cart-btn"
+                                    >
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <span class="sale-badge">Sale</span>
+                                    <img src="public/products/fp4.png" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        Cort CR250 6 String Electric Guitar
+                                    </h3>
+                                    <div class="product-pricing">
+                                        <span class="sale-price"
+                                            >Rs 38,200</span
+                                        >
+                                        <span class="original-price"
+                                            >Rs 42,378</span
+                                        >
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                        </div>
+                                        <span class="review-count">(124)</span>
+                                    </div>
+                                    <button
+                                        class="btn btn-primary add-to-cart-btn"
+                                    >
+                                        Add to Cart
+                                    </button>
+                                    <button
+                                        class="btn btn-outline add-to-cart-btn"
+                                    >
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <span class="sale-badge">Sale</span>
+                                    <img src="public/products/p3.jpeg" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        Fender Squier Classic Vibe '60s
+                                        Stratocaster Electric Guitar
+                                    </h3>
+                                    <div class="product-pricing">
+                                        <span class="sale-price"
+                                            >Rs 44,369</span
+                                        >
+                                        <span class="original-price"
+                                            >Rs 46,704</span
+                                        >
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                        </div>
+                                        <span class="review-count">(124)</span>
+                                    </div>
+                                    <button
+                                        class="btn btn-primary add-to-cart-btn"
+                                    >
+                                        Add to Cart
+                                    </button>
+                                    <button
+                                        class="btn btn-outline add-to-cart-btn"
+                                    >
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <span class="sale-badge">Sale</span>
+                                    <img src="public/products/p1.jpeg" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">
+                                        Ibanez GRX40 RG Gio Series Maple Neck 6
+                                        String Electric Guitar
+                                    </h3>
+                                    <div class="product-pricing">
+                                        <span class="sale-price"
+                                            >Rs 20,900</span
+                                        >
+                                        <span class="original-price"
+                                            >Rs 23,455</span
+                                        >
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                            <span class="star filled">★</span>
+                                        </div>
+                                        <span class="review-count">(154)</span>
+                                    </div>
+                                    <button
+                                        class="btn btn-primary add-to-cart-btn"
+                                    >
+                                        Add to Cart
+                                    </button>
+                                    <button
+                                        class="btn btn-outline add-to-cart-btn"
+                                    >
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- pagination -->
+                    <div class="pagination-wrapper">
+                        <div class="pagination">
+                            <!-- Left Arrow -->
+                            <div class="pagination-item arrow">‹</div>
+
+                            <!-- Page Numbers -->
+                            <div class="pagination-item active">1</div>
+                            <div class="pagination-item">2</div>
+                            <div class="pagination-item">3</div>
+
+                            <!-- Right Arrow -->
+                            <div class="pagination-item arrow">›</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
