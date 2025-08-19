@@ -423,11 +423,12 @@ body {
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
-.stars {
+.product-rating.stars {
     display: flex;
+    align-items: center;
     gap: 1px;
 }
 
@@ -581,7 +582,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.stars {
+.testimonial-card.stars {
     display: flex;
     gap: 2px;
     margin-bottom: 1.5rem;
