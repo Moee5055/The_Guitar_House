@@ -17,11 +17,6 @@
     padding: 0.9rem 10px;
 }
 
-.content {
-    margin-left: 320px;
-    height: 100vh;
-}
-
 .filter-section {
     background: var(--primary-bg);
     border-radius: 8px;
@@ -32,10 +27,10 @@
 
 .section-header {
     background-color: var(--secondary-bg);
-    padding: 16px 20px;
+    padding: 12px 20px;
     border-bottom: 1px solid var(--secondary-bg);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 0.9rem;
     color: var(--text-primary);
 }
 
@@ -102,6 +97,100 @@
 }
 
 .filter-option input[type="checkbox"]:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+.content {
+    margin-left: 320px;
+    height: 100vh;
+    padding-top: 2rem;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+.content-header h2 {
+    font-size: var(--text-2xl);
+    margin-left: 0.5rem;
+}
+
+.sort-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+.sort-select {
+    width: 250px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+/* Custom dropdown styling for better consistency */
+.sort-select option {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: var(--text-primary);
+    background-color: var(--secondary-bg);
+}
+
+.search-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 350px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 16px 10px 40px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 14px;
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.search-input::placeholder {
+    color: var(--text-primary);
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.search-input:focus-visible,
+.sort-select:focus-visible {
     outline: 2px solid #007bff;
     outline-offset: 2px;
 }
@@ -218,38 +307,6 @@
     font-size: 0.75rem;
     color: #9ca3af;
     margin-left: 0.25rem;
-}
-
-.add-to-cart-btn {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.add-to-cart-btn:hover {
-    transform: translateY(0);
-}
-
-.add-to-cart-btn:hover {
-    opacity: 0.9;
-}
-
-.view-all-product-btn {
-    display: block;
-    margin: 0 auto;
-    margin-top: 2rem;
-    font-size: var(--text-sm);
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-}
-
-.add-to-cart-btn:active {
-    transform: translateY(1px);
 }
 
 /* Responsive adjustments */

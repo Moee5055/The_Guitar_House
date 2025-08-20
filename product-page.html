@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Guitar House | Products</title>
-        <link rel="stylesheet" href="public/css/product-page.css" />
         <link rel="stylesheet" href="public/css/styles.css" />
+        <link rel="stylesheet" href="public/css/product-page.css" />
     </head>
     <body>
         <div class="container">
@@ -217,9 +217,36 @@
                     </div>
                 </aside>
                 <div class="content">
-                    <div>
-                        <h2>All Guitars</h2>
-                        <input type="input" />
+                    <div class="content-header">
+                        <div>
+                            <h2>All Guitars</h2>
+                        </div>
+                        <div class="search-wrapper">
+                            <span class="search-icon">🔍</span>
+                            <input
+                                type="text"
+                                class="search-input"
+                                placeholder="Search guitars..."
+                                id="guitar-search"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="sort-wrapper">
+                        <select class="sort-select" id="sort-select">
+                            <option value="" disabled selected>Sort by</option>
+                            <option value="popularity">Popularity</option>
+                            <option value="price-low-high">
+                                Price: Low to High
+                            </option>
+                            <option value="price-high-low">
+                                Price: High to Low
+                            </option>
+                            <option value="new-arrivals">New Arrivals</option>
+                            <option value="customer-rating">
+                                Customer Rating
+                            </option>
+                        </select>
                     </div>
 
                     <section class="featured-products">

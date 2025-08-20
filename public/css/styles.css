@@ -187,10 +187,33 @@ body {
 }
 
 .btn-outline:hover {
-    background: #ffffff;
-    color: #3b82f6;
+    background: var(--secondary-bg);
+    color: var(--text-secondary);
     border: 2px solid transparent;
+    border: 2px solid var(--text-secondary);
     transform: translateY(-1px);
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+    transform: translateY(0);
+}
+
+.add-to-cart-btn:hover {
+    opacity: 0.9;
+}
+
+.add-to-cart-btn:active {
+    transform: translateY(1px);
 }
 
 /*footer section*/
@@ -199,7 +222,7 @@ body {
     width: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .footer-content {
