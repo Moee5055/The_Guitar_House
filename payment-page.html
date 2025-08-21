@@ -196,7 +196,14 @@
                                     type="button"
                                     class="btn btn-primary btn-confirm"
                                 >
-                                    CONFIRM ORDER
+                                    <a
+                                        href="./thank-you-page.html"
+                                        style="
+                                            text-decoration: none;
+                                            color: #fff;
+                                        "
+                                        >CONFIRM ORDER</a
+                                    >
                                 </button>
                             </div>
                         </div>
@@ -384,15 +391,6 @@
                             );
                         }
                     });
-                });
-
-            // Handle confirm order
-            document
-                .querySelector(".btn-confirm")
-                .addEventListener("click", function () {
-                    alert(
-                        "Order confirmed! You will receive a confirmation email shortly.",
-                    );
                 });
         </script>
     </body>
