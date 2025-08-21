@@ -60,7 +60,7 @@
 }
 
 .item-name {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
     color: var(--text-primary);
@@ -226,7 +226,6 @@
 .e-sewa {
     background-color: #60bb46;
     color: var(--text-primary);
-    font-weight: 700;
     padding: 0.5rem 0.8rem;
     width: 120px;
     display: flex;
