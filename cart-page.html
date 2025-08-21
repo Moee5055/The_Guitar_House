@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Guitar House | Cart</title>
         <link rel="stylesheet" href="public/css/styles.css" />
+        <link rel="stylesheet" href="public/css/cart-page.css" />
     </head>
     <body>
         <div class="container">
@@ -78,33 +79,37 @@
             </header>
 
             <!-- main section -->
-            <main>
-                <h2>Shopping Cart</h2>
-                <div>
+            <main class="main-container">
+                <div class="content-container">
                     <!-- cart section -->
                     <div class="cart-section">
                         <div class="cart-items">
                             <!-- Cart Item 1 -->
                             <div class="cart-item">
                                 <div class="item-image">
-                                    <div class="image-placeholder">IMG</div>
+                                    <img src="public/products/fp1.png" alt="" />
                                 </div>
                                 <div class="item-details">
                                     <h3 class="item-name">
-                                        ASUS ROG Gaming Router AX6000
+                                        Ibanez GRX40 RG Gio Series Maple Neck 6
+                                        String Electric Guitar
                                     </h3>
                                     <p class="item-description">
-                                        High-performance gaming router
+                                        High-performance electric guitar
                                     </p>
-                                    <p class="item-price">$399.99</p>
+                                    <p class="item-price">Rs 18,789.99</p>
                                 </div>
                                 <div class="item-controls">
                                     <div class="quantity-controls">
-                                        <button class="qty-btn decrease">
+                                        <button
+                                            class="btn btn-primary qty-btn decrease"
+                                        >
                                             -
                                         </button>
                                         <span class="quantity">1</span>
-                                        <button class="qty-btn increase">
+                                        <button
+                                            class="btn btn-primary qty-btn increase"
+                                        >
                                             +
                                         </button>
                                     </div>
@@ -115,24 +120,27 @@
                             <!-- Cart Item 2 -->
                             <div class="cart-item">
                                 <div class="item-image">
-                                    <div class="image-placeholder">IMG</div>
+                                    <img src="public/products/p1.jpeg" alt="" />
                                 </div>
                                 <div class="item-details">
                                     <h3 class="item-name">
-                                        TP-Link Archer AX73
+                                        Fender Squier Classic Vibe '60s
+                                        Stratocaster Electric Guitar
                                     </h3>
-                                    <p class="item-description">
-                                        Wi-Fi 6 wireless router
-                                    </p>
-                                    <p class="item-price">$149.99</p>
+                                    <p class="item-description"></p>
+                                    <p class="item-price">Rs 12,853.93</p>
                                 </div>
                                 <div class="item-controls">
                                     <div class="quantity-controls">
-                                        <button class="qty-btn decrease">
+                                        <button
+                                            class="btn btn-primary qty-btn decrease"
+                                        >
                                             -
                                         </button>
                                         <span class="quantity">2</span>
-                                        <button class="qty-btn increase">
+                                        <button
+                                            class="btn btn-primary qty-btn increase"
+                                        >
                                             +
                                         </button>
                                     </div>
@@ -143,24 +151,29 @@
                             <!-- Cart Item 3 -->
                             <div class="cart-item">
                                 <div class="item-image">
-                                    <div class="image-placeholder">IMG</div>
+                                    <img src="public/products/p3.jpeg" alt="" />
                                 </div>
                                 <div class="item-details">
                                     <h3 class="item-name">
-                                        Netgear Nighthawk AX12
+                                        Fender Squier Sonic Stratocaster
+                                        Electric Guitar
                                     </h3>
                                     <p class="item-description">
-                                        12-stream Wi-Fi 6 router
+                                        Most Popular eletric guitar
                                     </p>
-                                    <p class="item-price">$449.99</p>
+                                    <p class="item-price">Rs 44,369.99</p>
                                 </div>
                                 <div class="item-controls">
                                     <div class="quantity-controls">
-                                        <button class="qty-btn decrease">
+                                        <button
+                                            class="btn btn-primary qty-btn decrease"
+                                        >
                                             -
                                         </button>
                                         <span class="quantity">1</span>
-                                        <button class="qty-btn increase">
+                                        <button
+                                            class="btn btn-primary qty-btn increase"
+                                        >
                                             +
                                         </button>
                                     </div>
@@ -170,10 +183,14 @@
                         </div>
 
                         <div class="cart-actions">
-                            <button class="continue-shopping-btn">
+                            <button
+                                class="btn btn-primary continue-shopping-btn"
+                            >
                                 CONTINUE SHOPPING
                             </button>
-                            <button class="clear-cart-btn">CLEAR CART</button>
+                            <button class="btn btn-outline clear-cart-btn">
+                                CLEAR CART
+                            </button>
                         </div>
                     </div>
 
@@ -186,7 +203,7 @@
                                 <span class="summary-label"
                                     >Subtotal (4 items)</span
                                 >
-                                <span class="summary-value">$1,149.96</span>
+                                <span class="summary-value">Rs 1,149.96</span>
                             </div>
                             <div class="summary-row">
                                 <span class="summary-label">Shipping</span>
@@ -194,23 +211,49 @@
                             </div>
                             <div class="summary-row">
                                 <span class="summary-label">Tax</span>
-                                <span class="summary-value">$91.99</span>
+                                <span class="summary-value">Rs 91.99</span>
                             </div>
                             <div class="summary-row total">
                                 <span class="summary-label">Total</span>
-                                <span class="summary-value">$1,241.95</span>
+                                <span class="summary-value">Rs 1,241.95</span>
                             </div>
                         </div>
 
-                        <button class="checkout-btn">
+                        <button class="btn btn-primary checkout-btn">
                             PROCEED TO CHECKOUT
                         </button>
 
                         <div class="secure-checkout">
                             <p class="secure-text">Secure checkout with:</p>
                             <div class="payment-icons">
-                                <div class="payment-icon visa">VISA</div>
-                                <div class="payment-icon mastercard">MC</div>
+                                <div class="btn btn-primary e-sewa">
+                                    <img src="public/esewa.svg" alt="" />
+                                </div>
+                                <div class="btn btn-primary cash-on-delivery">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-banknote-icon lucide-banknote"
+                                    >
+                                        <rect
+                                            width="20"
+                                            height="12"
+                                            x="2"
+                                            y="6"
+                                            rx="2"
+                                        />
+                                        <circle cx="12" cy="12" r="2" />
+                                        <path d="M6 12h.01M18 12h.01" />
+                                    </svg>
+                                    Cash on Delivery
+                                </div>
                             </div>
                         </div>
 
@@ -225,9 +268,96 @@
                             </div>
                         </div>
                     </div>
+                    <!-- buttons -->
                 </div>
-                <!-- buttons -->
             </main>
+
+            <!-- footer section -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="brand-logo">
+                            <span class="cart-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-guitar-icon lucide-guitar"
+                                >
+                                    <path d="m11.9 12.1 4.514-4.514" />
+                                    <path
+                                        d="M20.1 2.3a1 1 0 0 0-1.4 0l-1.114 1.114A2 2 0 0 0 17 4.828v1.344a2 2 0 0 1-.586 1.414A2 2 0 0 1 17.828 7h1.344a2 2 0 0 0 1.414-.586L21.7 5.3a1 1 0 0 0 0-1.4z"
+                                    />
+                                    <path d="m6 16 2 2" />
+                                    <path
+                                        d="M8.23 9.85A3 3 0 0 1 11 8a5 5 0 0 1 5 5 3 3 0 0 1-1.85 2.77l-.92.38A2 2 0 0 0 12 18a4 4 0 0 1-4 4 6 6 0 0 1-6-6 4 4 0 0 1 4-4 2 2 0 0 0 1.85-1.23z"
+                                    />
+                                </svg>
+                            </span>
+                            <span class="brand-name">Guitar House</span>
+                        </div>
+                        <p class="brand-description">
+                            Your one-stop destination for quality products at
+                            unbeatable prices. Shop with confidence and enjoy
+                            fast, reliable service.
+                        </p>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3 class="column-title">Shop</h3>
+                            <ul class="link-list">
+                                <li><a href="#">All Products</a></li>
+                                <li><a href="#">New Arrivals</a></li>
+                                <li><a href="#">Best Sellers</a></li>
+                                <li><a href="#">Sale Items</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3 class="column-title">Support</h3>
+                            <ul class="link-list">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping Info</a></li>
+                                <li><a href="#">Returns</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3 class="column-title">Company</h3>
+                            <ul class="link-list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <p class="copyright">
+                            © 2025 ShopHub. All rights reserved.
+                        </p>
+                        <div class="payment-methods">
+                            <span class="payment-text">We accept:</span>
+                            <div class="payment-cards">
+                                <span class="payment-card">VISA</span>
+                                <span class="payment-card">MC</span>
+                                <span class="payment-card">AMEX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
