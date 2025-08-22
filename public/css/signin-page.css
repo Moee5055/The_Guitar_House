@@ -1,0 +1,76 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    background: var(--secondary-bg);
+    padding: 30px;
+    border-radius: 10px;
+    width: 450px;
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 2.3rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 14px;
+    text-align: left;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+    opacity: 0.8;
+}
+
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid transparent;
+    color: var(--text-primary);
+    background: var(--primary-bg);
+    transition:
+        border-color 0.2s,
+        background-color 0.2s;
+}
+
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border: 2px solid #4a90e2;
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+.link {
+    display: block;
+    margin-top: 12px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link:hover {
+    color: var(--secondary);
+}
