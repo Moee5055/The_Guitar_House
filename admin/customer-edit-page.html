@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Guitar House | Customer Register</title>
+        <title>Guitar House | Customer</title>
         <link rel="stylesheet" href="/public/css/admin/styles.css" />
         <link rel="stylesheet" href="/public/css/admin/sidebar.css" />
         <link rel="stylesheet" href="/public/css/admin/admin-user-mgmt.css" />
@@ -269,50 +269,61 @@
                     </div>
                 </header>
                 <div class="customer-page-container">
-                    <div class="customer_mgmt">
-                        <h1 class="page-title">All User</h1>
-                        <!-- <a href="./logout.php" title="Logout" class="btn btn--secondary">Logout</a> -->
-                        <table border="1" cellspacing="0" cellpadding="6">
-                            <thead>
-                                <tr>
-                                    <th>S.N.</th>
-                                    <th>Customer_id</th>
-                                    <th>Fullname</th>
-                                    <th>E-Mail</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>1234</td>
-                                    <td>Aayusha Adhikari</td>
-                                    <td>aayu123@gmail.com</td>
-                                    <td>
-                                        <a
-                                            href="./customer-edit-page.html"
-                                            title="Edit"
-                                            >Edit</a
-                                        >
-                                        <a href="#" title="Delete">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2.</td>
-                                    <td>7832</td>
-                                    <td>Anima Dahal</td>
-                                    <td>anime5343@gmail.com</td>
-                                    <td>
-                                        <a
-                                            href="./customer-edit-page.html"
-                                            title="Edit"
-                                            >Edit</a
-                                        >
-                                        <a href="#" title="Delete">Delete</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="customer_mgmt form-box">
+                        <h1 class="page-title">Update Customer Details</h1>
+                        <form
+                            action="#"
+                            method="POST"
+                            name="user_form"
+                            enctype="multipart/form-data"
+                            novalidate
+                        >
+                            <input type="hidden" name="user_id" value="1234" />
+                            <div class="field-group">
+                                <label for="fname">Fullname</label>
+                                <input
+                                    type="text"
+                                    id="fname"
+                                    name="fullname"
+                                    value="Aayusha Adhikari"
+                                />
+                            </div>
+                            <div class="field-group">
+                                <label for="phone">Phone</label>
+                                <input
+                                    type="text"
+                                    id="phone"
+                                    name="phone"
+                                    value="9822451234"
+                                />
+                            </div>
+                            <div class="field-group">
+                                <label for="email">E-Mail</label>
+                                <input
+                                    type="text"
+                                    id="email"
+                                    name="email"
+                                    value="aayu1234@gmail.com"
+                                    disabled
+                                />
+                            </div>
+                            <div class="field-group">
+                                <label for="addr">Address</label>
+                                <input
+                                    type="text"
+                                    id="addr"
+                                    name="address"
+                                    value="Lekhnath 31, Pokhara"
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                name="submit"
+                                class="btn btn--secondary"
+                            >
+                                Update Now
+                            </button>
+                        </form>
                         <a
                             href="./customer-mgmt-page.html"
                             title="Back to Home"
