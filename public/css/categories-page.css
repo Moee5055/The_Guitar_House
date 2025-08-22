@@ -1,0 +1,36 @@
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.sort-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-categories {
+    display: inline-block;
+    padding: 8px 16px; /* Comfortable clickable area */
+    font-size: 14px; /* Readable text size */
+    font-weight: 500; /* Medium weight for emphasis */
+    border: none;
+    border-radius: 8px; /* Smooth rounded corners */
+    background-color: #2563eb; /* Nice blue (you can change) */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    margin: 8px;
+}
+
+.btn-categories:hover {
+    background-color: #1d4ed8; /* Darker shade on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+.btn-categories:active {
+    transform: translateY(0); /* Button presses naturally */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}

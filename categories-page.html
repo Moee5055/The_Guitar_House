@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Guitar House | Products</title>
+        <title>Guitar House | Categories</title>
         <link rel="stylesheet" href="public/css/styles.css" />
         <link rel="stylesheet" href="public/css/product-page.css" />
+        <link rel="stylesheet" href="public/css/categories-page.css" />
     </head>
     <body>
         <div class="container">
@@ -83,148 +84,10 @@
 
             <!-- main section  -->
             <main class="main-container">
-                <!-- filter section -->
-                <aside class="filter-sidebar">
-                    <div class="filter-container">
-                        <!-- filter by body style -->
-                        <div class="filter-section">
-                            <div class="section-header">Shape / Style</div>
-                            <div class="section-content">
-                                <div class="filter-option">
-                                    <input type="checkbox" id="strat" />
-                                    <label for="strat">Strat</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="tele" />
-                                    <label for="tele">Tele</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="les-paul" />
-                                    <label for="les-paul">Les Paul</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="sg" />
-                                    <label for="sg">SG</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="superstrat" />
-                                    <label for="superstrat">Superstrat</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="offset" />
-                                    <label for="offset">Offset</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- filter my pickup type -->
-                        <div class="filter-section">
-                            <div class="section-header">Pickup Type</div>
-                            <div class="section-content">
-                                <div class="filter-option">
-                                    <input type="checkbox" id="single-coil" />
-                                    <label for="single-coil">Single Coil</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="humbucker" />
-                                    <label for="humbucker">Humbucker</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="p90" />
-                                    <label for="p90">P90</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="mixed" />
-                                    <label for="mixed">Mixed</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Filter by price -->
-                        <div class="filter-section">
-                            <div class="section-header">Price Range</div>
-                            <div class="section-content">
-                                <div class="filter-option">
-                                    <input type="checkbox" id="under-10000" />
-                                    <label for="under-10000"
-                                        >Under ₹10,000</label
-                                    >
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="10000-25000" />
-                                    <label for="10000-25000"
-                                        >₹10,000 - ₹25,000</label
-                                    >
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="25000-50000" />
-                                    <label for="25000-50000"
-                                        >₹25,000 - ₹50,000</label
-                                    >
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="50000-100000" />
-                                    <label for="50000-100000"
-                                        >₹50,000 - ₹1,00,000</label
-                                    >
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="100000-200000" />
-                                    <label for="100000-200000"
-                                        >₹1,00,000 - ₹2,00,000</label
-                                    >
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="above-200000" />
-                                    <label for="above-200000"
-                                        >Above ₹2,00,000</label
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- filter by brand -->
-                        <div class="filter-section">
-                            <div class="section-header">By Brand</div>
-                            <div class="section-content">
-                                <div class="filter-option">
-                                    <input type="checkbox" id="fender" />
-                                    <label for="fender">Fender</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="gibson" />
-                                    <label for="gibson">Gibson</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="ibanez" />
-                                    <label for="ibanez">Ibanez</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="prs" />
-                                    <label for="prs"
-                                        >PRS (Paul Reed Smith)</label
-                                    >
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="yamaha" />
-                                    <label for="yamaha">Yamaha</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="esp" />
-                                    <label for="esp">ESP / LTD</label>
-                                </div>
-                                <div class="filter-option">
-                                    <input type="checkbox" id="jackson" />
-                                    <label for="jackson">Jackson</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
                 <div class="content">
                     <div class="content-header">
                         <div>
-                            <h2>All Guitars</h2>
+                            <h2>Categories</h2>
                         </div>
                         <div class="search-wrapper">
                             <span class="search-icon">🔍</span>
@@ -238,6 +101,16 @@
                     </div>
 
                     <div class="sort-wrapper">
+                        <select class="sort-select" id="sort-select">
+                            <option value="" disabled selected>
+                                Filter By Categories
+                            </option>
+                            <option value="solid-body">Solid Body</option>
+                            <option value="semi-hollow-body">
+                                Semi-Hollow Body
+                            </option>
+                            <option value="hollow-body">Hollow Body</option>
+                        </select>
                         <select class="sort-select" id="sort-select">
                             <option value="" disabled selected>Sort by</option>
                             <option value="popularity">Popularity</option>
@@ -521,5 +394,6 @@
                 </div>
             </main>
         </div>
+        <script src="public/js/header.js"></script>
     </body>
 </html>

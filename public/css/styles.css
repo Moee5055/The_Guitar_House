@@ -133,8 +133,8 @@ body {
     color: var(--text-primary);
 }
 
-.header .navigation ul li:hover {
-    color: var(--text-primary);
+.header .navigation ul li:hover a {
+    color: var(--btn-primary);
 }
 
 .header .navigation ul *:first-child {
