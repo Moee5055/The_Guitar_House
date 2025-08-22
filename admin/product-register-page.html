@@ -3,9 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Guitar House | Customer Mgmt</title>
+        <title>Admin | Product_Mgmt</title>
         <link rel="stylesheet" href="/public/css/admin/styles.css" />
         <link rel="stylesheet" href="/public/css/admin/sidebar.css" />
+        <link
+            rel="stylesheet"
+            href="/public/css/admin/admin-product-mgmt.css"
+        />
         <link rel="stylesheet" href="/public/css/admin/admin-user-mgmt.css" />
     </head>
     <body>
@@ -269,66 +273,79 @@
                     </div>
                 </header>
                 <div class="customer-page-container">
-                    <div class="customer_mgmt">
-                        <h1 class="page-title">All User</h1>
-                        <!-- <a href="./logout.php" title="Logout" class="btn btn--secondary">Logout</a> -->
-                        <table border="1" cellspacing="0" cellpadding="6">
-                            <thead>
-                                <tr>
-                                    <th>S.N.</th>
-                                    <th>Customer_id</th>
-                                    <th>Fullname</th>
-                                    <th>E-Mail</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php $i = 1; while ($row =
-                                mysqli_fetch_assoc($res)): ?>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>1234</td>
-                                    <td>Aayusha Adhikari</td>
-                                    <td>aayu123@gmail.com</td>
-                                    <td>
-                                        <a
-                                            href="./edit.php?customer_id=<?php echo $row['customer_id']; ?>"
-                                            title="Edit"
-                                            >Edit</a
-                                        >
-                                        <a
-                                            href="./delete.php?customer_id=<?php echo $row['customer_id']; ?>"
-                                            title="Delete"
-                                            >Delete</a
-                                        >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2.</td>
-                                    <td>7832</td>
-                                    <td>Anima Dahal</td>
-                                    <td>anime5343@gmail.com</td>
-                                    <td>
-                                        <a
-                                            href="./edit.php?customer_id=<?php echo $row['customer_id']; ?>"
-                                            title="Edit"
-                                            >Edit</a
-                                        >
-                                        <a
-                                            href="./delete.php?customer_id=<?php echo $row['customer_id']; ?>"
-                                            title="Delete"
-                                            >Delete</a
-                                        >
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a
-                            href="./customer-mgmt-page.html"
-                            title="Back to Home"
-                            class="text-link"
-                            >&larr;Back to Home</a
-                        >
+                    <div class="product-container" style="overflow-y: auto;">
+                        <!-- Header -->
+                        <header class="product-header">
+                            <div class="product-header-left">
+                                <div class="product-header-text">
+                                    <h1>Add New Product</h1>
+                                </div
+                             </div>
+                        </header>
+
+                        <!-- Product Information Section -->
+                        <section class="product-form-section">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <span class="edit-icon">✏️</span>
+                                </div>
+                                <div class="section-text">
+                                    <h2>Product Information</h2>
+                                </div>
+                            </div>
+
+                            <form action="#" method="POST" name="product_form" enctype="multipart/form-data" class="product-form" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="productName">Product Name</label>
+                                        <input type="text" id="productName" name="product_name" placeholder="Product Name" class="form-input" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="category">Category</label>
+                                        <select id="category" name="product_category" class="form-input">
+                                            <option value="1" selected>Select Category</option>
+                                            <option value="1" >Solid Body</option>
+                                            <option value="1" >Hollow Body</option>
+                                            <option value="1" >Semi-Hollow Body</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="price">Price ($)</label>
+                                        <input type="number" id="price" name="product_price" placeholder="Product Price" class="form-input" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="stock">Stock Quantity</label>
+                                        <input type="number" id="stock" name="product_stock" placeholder="Stock size" class="form-input" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="description">Product Description</label>
+                                    <textarea id="description" name="product_description" class="form-textarea" rows="4" placeholder="High-quality wireless headphones with noise cancellation and long battery life."></textarea>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="productImage">Product Image</label>
+                                    <div class="image-upload-container">
+                                        <div class="file-upload">
+                                            <input type="file" name="product_image" accept="image/*">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-cancel" style="background-color: #ef4444;">
+                                        <a href="./product-mgmt-page.html" style="text-decoration:none; color: white;"> ✕ Cancel </a>
+                                    </button>
+                                    <button type="submit" name="submit" class="btn btn-primary" style="background-color: #10b981;">
+                                        <a href="./product-mgmt-page.html" style="text-decoration:none; color: white;"> 💾 Save Changes </a>
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
                     </div>
                 </div>
             </div>

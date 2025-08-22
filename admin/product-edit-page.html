@@ -3,9 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Guitar House | Customer Mgmt</title>
+        <title>Admin | Product_Mgmt</title>
         <link rel="stylesheet" href="/public/css/admin/styles.css" />
         <link rel="stylesheet" href="/public/css/admin/sidebar.css" />
+        <link
+            rel="stylesheet"
+            href="/public/css/admin/admin-product-mgmt.css"
+        />
         <link rel="stylesheet" href="/public/css/admin/admin-user-mgmt.css" />
     </head>
     <body>
@@ -269,69 +273,144 @@
                     </div>
                 </header>
                 <div class="customer-page-container">
-                    <div class="customer_mgmt">
-                        <h1 class="page-title">All User</h1>
-                        <!-- <a href="./logout.php" title="Logout" class="btn btn--secondary">Logout</a> -->
-                        <table border="1" cellspacing="0" cellpadding="6">
-                            <thead>
-                                <tr>
-                                    <th>S.N.</th>
-                                    <th>Customer_id</th>
-                                    <th>Fullname</th>
-                                    <th>E-Mail</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php $i = 1; while ($row =
-                                mysqli_fetch_assoc($res)): ?>
-                                <tr>
-                                    <td>1.</td>
-                                    <td>1234</td>
-                                    <td>Aayusha Adhikari</td>
-                                    <td>aayu123@gmail.com</td>
-                                    <td>
-                                        <a
-                                            href="./edit.php?customer_id=<?php echo $row['customer_id']; ?>"
-                                            title="Edit"
-                                            >Edit</a
-                                        >
-                                        <a
-                                            href="./delete.php?customer_id=<?php echo $row['customer_id']; ?>"
-                                            title="Delete"
-                                            >Delete</a
-                                        >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2.</td>
-                                    <td>7832</td>
-                                    <td>Anima Dahal</td>
-                                    <td>anime5343@gmail.com</td>
-                                    <td>
-                                        <a
-                                            href="./edit.php?customer_id=<?php echo $row['customer_id']; ?>"
-                                            title="Edit"
-                                            >Edit</a
-                                        >
-                                        <a
-                                            href="./delete.php?customer_id=<?php echo $row['customer_id']; ?>"
-                                            title="Delete"
-                                            >Delete</a
-                                        >
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a
-                            href="./customer-mgmt-page.html"
-                            title="Back to Home"
-                            class="text-link"
-                            >&larr;Back to Home</a
+                    <header class="header" style="padding: 1rem 1.3rem">
+                        <div class="header-left">
+                            <div class="header-text">
+                                <h1>
+                                    Edit Product: Fender Squier Sonic
+                                    Stratocaster Electric Guitar
+                                </h1>
+                                <p>
+                                    Update details for product ID: prod00-1234
+                                </p>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Product Information Section -->
+                    <section class="product-form-section">
+                        <div class="section-header">
+                            <div class="section-icon">
+                                <span class="edit-icon">✏️</span>
+                            </div>
+                            <div class="section-text">
+                                <h2>Product Information</h2>
+                                <p>Modify the product details below.</p>
+                            </div>
+                        </div>
+
+                        <form
+                            action="#"
+                            method="POST"
+                            name="product_form"
+                            class="product-form"
+                            enctype="multipart/form-data"
+                            novalidate
                         >
-                    </div>
+                            <input
+                                type="hidden"
+                                name="product_id"
+                                value="<?php echo $product_id; ?>"
+                            />
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="productName"
+                                        >Product Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        name="product_name"
+                                        id="productName"
+                                        value=" Fender Squier Sonic Stratocaster Electric Guitar"
+                                        class="form-input"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="price">Price ($)</label>
+                                    <input
+                                        type="number"
+                                        name="product_price"
+                                        id="price"
+                                        value="18342"
+                                        step="0.01"
+                                        class="form-input"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="stock">Stock Quantity</label>
+                                    <input
+                                        type="number"
+                                        name="product_stock"
+                                        id="stock"
+                                        value="12"
+                                        class="form-input"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="description"
+                                    >Product Description</label
+                                >
+                                <textarea
+                                    id="description"
+                                    name="product_description"
+                                    class="form-textarea"
+                                    rows="4"
+                                >
+                                </textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="productImage">Product Image</label>
+                                <div class="image-upload-container">
+                                    <div class="file-upload">
+                                        <input
+                                            type="file"
+                                            name="product_image"
+                                            accept="image/*"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-cancel">
+                                    <a
+                                        href="./product-mgmt-page.html"
+                                        style="
+                                            text-decoration: none;
+                                            color: white;
+                                        "
+                                    >
+                                        ✕ Cancel
+                                    </a>
+                                </button>
+                                <button
+                                    type="submit"
+                                    name="submit"
+                                    class="btn btn-primary"
+                                >
+                                    <a
+                                        href="./product-mgmt-page.html"
+                                        style="
+                                            text-decoration: none;
+                                            color: white;
+                                        "
+                                    >
+                                        💾 Save Changes
+                                    </a>
+                                </button>
+                            </div>
+                        </form>
+                    </section>
                 </div>
             </div>
         </div>
+        <!-- Script links -->
+        <script src="/public/js/scripts.js" type="text/javascript"></script>
     </body>
 </html>
