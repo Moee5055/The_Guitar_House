@@ -15,11 +15,23 @@
     --radius-xl: 1rem;
 }
 
-.content-container {
-    margin: 0 auto;
+.main-container {
     margin-top: var(--nav-height);
-    max-width: 1200px;
-    padding: var(--spacing-xl);
+    position: relative;
+}
+
+.main-container-sidebar {
+    position: fixed;
+    top: var(--nav-height);
+    width: 300px;
+    overflow-y: auto;
+    bottom: 0;
+}
+
+.content-container {
+    margin-left: 320px;
+    height: 100vh;
+    padding-top: 2rem;
 }
 
 .content-header {
@@ -61,6 +73,33 @@
     margin-bottom: 0.25rem;
 }
 
+.header-right .user-profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-right .rounded-profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: var(--accent-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right .user-profile .user-information p {
+    margin: 0;
+    padding: 0;
+    font-size: var(--text-sm);
+}
+
+.header-right .user-profile .user-information span {
+    font-size: var(--text-xs);
+    display: block;
+}
+
 .customer-badge {
     display: inline-flex;
     align-items: center;
@@ -78,6 +117,8 @@
     grid-template-columns: 2fr 1fr;
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-2xl);
+    padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
 .main-content {
@@ -86,7 +127,7 @@
     gap: var(--spacing-xl);
 }
 
-.sidebar {
+.dashboard-sidebar {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);
