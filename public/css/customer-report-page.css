@@ -40,6 +40,33 @@
     margin-bottom: 30px;
 }
 
+.header-right .user-profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-right .rounded-profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #28a745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right .user-profile .user-information p {
+    margin: 0;
+    padding: 0;
+    font-size: var(--text-sm);
+}
+
+.header-right .user-profile .user-information span {
+    font-size: var(--text-xs);
+    display: block;
+}
+
 .summary-card {
     background-color: #fff;
     padding: 25px;
